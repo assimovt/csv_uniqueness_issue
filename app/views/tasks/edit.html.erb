@@ -1,0 +1,15 @@
+<div style="display: block; max-width: 600px; margin: 40px auto;">
+  <h1>Client Side Validations Security</h1>
+
+  <p>
+    This is an example of
+    <a href="https://github.com/DavyJonesLocker/client_side_validations">client_side_validations</a>
+    gem exposing all attributes of the <code>user</code> object when trying to validate uniqueness of the associated <code>task</code> object. Uniqueness validator has been disabled.<br><br>
+    To see what's being exposed, click the button below.
+  </p>
+
+  <%= form_for Task.first, validate: true do |f| %>
+    <%= f.text_field :title, disabled: true %>
+    <%= f.submit "Click me" %>
+  <% end %>
+</div>

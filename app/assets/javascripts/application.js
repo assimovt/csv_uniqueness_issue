@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require rails.validations
+
+
+$(document).ready(function() {
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    var data = window.ClientSideValidations.forms['edit_task_1'];
+    alert(JSON.stringify(data.validators["task[title]"]));
+  });
+});

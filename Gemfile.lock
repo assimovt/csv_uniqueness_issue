@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/DavyJonesLocker/client_side_validations.git
+  revision: 3ec93471bb629514f1ab48742b1a214b3115b88e
+  branch: 4-2-stable
+  specs:
+    client_side_validations (4.2.0)
+      jquery-rails (>= 3.1.2, < 5.0.0)
+      js_regex (~> 1.0, >= 1.0.9)
+      rails (>= 4.0.0, < 4.3.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -62,6 +72,8 @@ GEM
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    js_regex (1.0.13)
+      regexp_parser (= 0.3.2)
     json (1.8.3)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -103,6 +115,7 @@ GEM
     rake (10.5.0)
     rdoc (4.2.2)
       json (~> 1.4)
+    regexp_parser (0.3.2)
     sass (3.4.21)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -143,6 +156,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  client_side_validations!
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
